@@ -38,8 +38,8 @@
     --r-lg: 16px;
     --r-xl: 24px;
     --r-full: 9999px;
-    --tr: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
-    --mw: 1180px;
+    --tr: 0.42s cubic-bezier(0.4, 0, 0.2, 1);
+    --mw: 1360px;
 }
 
 /* ── Reset ─────────────────────────────────────────────── */
@@ -1340,13 +1340,28 @@ ul {
     position: relative;
     overflow: hidden;
 }
+
 .vm-card--vision {
-    background: var(--g900);
-    color: var(--white);
+    background: var(--g50);
+    border: 1px solid var(--g200);
+    transition:
+        background var(--tr),
+        color var(--tr);
 }
 .vm-card--mission {
     background: var(--g50);
     border: 1px solid var(--g200);
+    transition:
+        background var(--tr),
+        color var(--tr);
+}
+.vm-card--vision:hover {
+    background: var(--g900);
+    color: var(--white);
+}
+.vm-card--mission:hover {
+    background: var(--g900);
+    color: var(--white);
 }
 .vm-card h3 {
     font-family: var(--font-d);
@@ -1355,17 +1370,23 @@ ul {
     margin-bottom: 16px;
 }
 .vm-card--vision h3 {
-    color: var(--g400);
+    color: var(--g800);
 }
 .vm-card--mission h3 {
     color: var(--g800);
+}
+.vm-card--vision:hover h3 {
+    color: var(--white);
+}
+.vm-card--mission:hover h3 {
+    color: var(--white);
 }
 .vm-card p {
     font-size: 15px;
     line-height: 1.8;
 }
 .vm-card--vision p {
-    color: var(--g200);
+    color: var(--n600);
 }
 .vm-card--mission p {
     color: var(--n600);
@@ -1380,10 +1401,16 @@ ul {
     opacity: 0.08;
 }
 .vm-card--vision .vm-deco {
-    background: var(--g400);
+    background: var(--g700);
 }
 .vm-card--mission .vm-deco {
     background: var(--g700);
+}
+.vm-card--vision:hover .vm-deco {
+    background: var(--g100);
+}
+.vm-card--mission:hover .vm-deco {
+    background: var(--g100);
 }
 .values-grid {
     display: grid;
