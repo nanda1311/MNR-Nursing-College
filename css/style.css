@@ -29,9 +29,9 @@
     --n500: #5a6660;
     --n300: #b0bab5;
     --n100: #c6c6c6;
-    --n50: #f7f9f8;
+    --n50: #d6d6e6;
     --white: #fff;
-    --font-d: "DM Serif Display", Georgia, serif;
+    --font-d: 'Poppins', sans-serif;
     --font-b: "DM Sans", system-ui, sans-serif;
     --r-sm: 6px;
     --r-md: 10px;
@@ -214,7 +214,7 @@ ul {
         border-color var(--tr);
 }
 .navbar.scrolled {
-    box-shadow: var(--sh-md);
+    box-shadow: 0 4px 32px rgba(0, 0, 0, .12);
     border-bottom-color: transparent;
 }
 .nav-inner {
