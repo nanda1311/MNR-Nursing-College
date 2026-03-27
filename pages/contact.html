@@ -8,6 +8,103 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+    /* Scroll to top button styles - Add this to your existing CSS */
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, #0f4c6b, #0a2f48);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 999;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      border: none;
+      font-size: 24px;
+    }
+
+    .scroll-top-btn.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .scroll-top-btn:hover {
+      background: #617985;
+      transform: scale(1.08);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    }
+/* Add to your existing CSS */
+.floating-buttons {
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+}
+
+.float-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: none;
+  font-size: 24px;
+  text-decoration: none;
+  margin-bottom: -21px;
+
+}
+
+.whatsapp-btn {
+  background: #25D366;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.whatsapp-btn:hover {
+  background: #128C7E;
+  transform: scale(1.08);
+}
+
+    @media (max-width: 768px) {
+      .scroll-top-btn {
+        width: 44px;
+        height: 44px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 20px;
+      }
+      .whatsapp-btn {
+        width: 44px;
+        height: 44px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 20px;
+        margin-bottom: 40px;
+        margin-right: -10px;
+
+      }
+    }
+  </style>
 </head>
 <body>
 <!-- ANN BAR -->
@@ -24,7 +121,7 @@
 </header>
 
 <!-- PAGE HERO -->
-<section class="page-hero">
+<section class="page-hero-contact">
   <div class="container page-hero-inner">
     <div class="breadcrumb"><a href="../index.html">Home</a><span class="breadcrumb-sep">/</span><span>Contact</span></div>
     <h1>We're here to <em>help you</em></h1>
@@ -236,5 +333,47 @@
   </div>
 </footer>
 <script src="../js/main.js"></script>
+<div class="floating-buttons">
+  <a href="https://wa.me/919876543210?text=Hello%20I%20want%20to%20know%20about%20nursing%20admissions" 
+     class="whatsapp-btn float-btn" 
+     target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  
+  <button class="scroll-top-btn float-btn" id="scrollTopBtn">
+    ↑
+  </button>
+</div>
+
+<script>
+  // JavaScript for scroll to top functionality
+  (function() {
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    
+    // Show/hide button based on scroll position
+    function toggleScrollButton() {
+      if (window.scrollY > 300) {
+        scrollBtn.classList.add('show');
+      } else {
+        scrollBtn.classList.remove('show');
+      }
+    }
+    
+    // Smooth scroll to top
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+    
+    // Add event listeners
+    window.addEventListener('scroll', toggleScrollButton);
+    scrollBtn.addEventListener('click', scrollToTop);
+    
+    // Initial check
+    toggleScrollButton();
+  })();
+</script>
 </body>
 </html>

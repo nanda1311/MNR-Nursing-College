@@ -405,7 +405,6 @@ ul {
    PAGE HERO BANNER (inner pages)
 ══════════════════════════════════════════════════════════ */
 .page-hero {
-    background: var(--g900);
     padding: 64px 0 56px;
     position: relative;
     overflow: hidden;
@@ -414,10 +413,221 @@ ul {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: linear-gradient(var(--g800) 1px, transparent 1px),
-        linear-gradient(90deg, var(--g800) 1px, transparent 1px);
+    background-color: #0d1b38;
+    background-image: linear-gradient(var(--g800) 1px, transparent 1px), linear-gradient(90deg, var(--g800) 1px, transparent 1px);
     background-size: 40px 40px;
-    opacity: 0.4;
+    opacity: 2.0;
+}
+/* ══════════════════════════════════════════════════════════
+   PAGE HERO BANNER (about page)
+══════════════════════════════════════════════════════════ */
+.page-hero-about {
+    padding: 64px 0 56px;
+    position: relative;
+    overflow: hidden;
+}
+.page-hero-about::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #0d1b38;
+    background-image: url(/images/about-banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.page-hero-about h1 {
+    font-family: var(--font-d);
+    font-size: clamp(32px, 5vw, 52px);
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+.page-hero-about h1 em {
+    font-style: italic;
+    color: var(--g400);
+}
+.page-hero-about p {
+    font-size: 16px;
+    color: var(--g200);
+    margin-top: 14px;
+    max-width: 560px;
+    line-height: 1.75;
+}
+/* ══════════════════════════════════════════════════════════
+   PAGE HERO BANNER (academics page)
+══════════════════════════════════════════════════════════ */
+.page-hero-academics {
+    padding: 64px 0 56px;
+    position: relative;
+    overflow: hidden;
+}
+.page-hero-academics::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #0d1b38;
+    background-image: url(/images/academics-banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.page-hero-academics h1 {
+    font-family: var(--font-d);
+    font-size: clamp(32px, 5vw, 52px);
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+.page-hero-academics h1 em {
+    font-style: italic;
+    color: var(--g400);
+}
+.page-hero-academics p {
+    font-size: 16px;
+    color: var(--g200);
+    margin-top: 14px;
+    max-width: 560px;
+    line-height: 1.75;
+}
+/* ══════════════════════════════════════════════════════════
+   PAGE HERO BANNER (admissions page)
+══════════════════════════════════════════════════════════ */
+.page-hero-admissions {
+    padding: 64px 0 56px;
+    position: relative;
+    overflow: hidden;
+}
+.page-hero-admissions::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #0d1b38;
+    background-image: url(/images/admissions-banner1.png.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.page-hero-admissions h1 {
+    font-family: var(--font-d);
+    font-size: clamp(32px, 5vw, 52px);
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+.page-hero-admissions h1 em {
+    font-style: italic;
+    color: var(--g400);
+}
+.page-hero-admissions p {
+    font-size: 16px;
+    color: var(--g200);
+    margin-top: 14px;
+    max-width: 560px;
+    line-height: 1.75;
+}
+/* ══════════════════════════════════════════════════════════
+   PAGE HERO BANNER (contact page)
+══════════════════════════════════════════════════════════ */
+.page-hero-contact {
+    padding: 64px 0 56px;
+    position: relative;
+    overflow: hidden;
+}
+.page-hero-contact::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #0d1b38;
+    background-image: url(/images/contact-banner1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.page-hero-contact h1 {
+    font-family: var(--font-d);
+    font-size: clamp(32px, 5vw, 52px);
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+.page-hero-contact h1 em {
+    font-style: italic;
+    color: var(--g400);
+}
+.page-hero-contact p {
+    font-size: 16px;
+    color: var(--g200);
+    margin-top: 14px;
+    max-width: 560px;
+    line-height: 1.75;
+}
+/* ══════════════════════════════════════════════════════════
+   PAGE HERO BANNER (for campus page, which has a video background)
+══════════════════════════════════════════════════════════ */
+.page-hero-campus {
+    padding: 64px 0 56px;
+    position: relative;
+    overflow: hidden;
+}
+.page-hero-campus {
+    position: relative;
+    min-height: 60vh; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Video styling */
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Optional: Dark overlay for better text readability */
+.page-hero-campus::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgb(13 27 56 / 94%); /* Your original #0d1b38 with opacity */
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+
+
+.page-hero-campus h1 {
+    font-family: var(--font-d);
+    font-size: clamp(32px, 5vw, 52px);
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+.page-hero-campus h1 em {
+    font-style: italic;
+    color: var(--g400);
+}
+.page-hero-campus p {
+    font-size: 16px;
+    color: var(--g200);
+    margin-top: 14px;
+    max-width: 560px;
+    line-height: 1.75;
 }
 .page-hero-inner {
     position: relative;
@@ -460,6 +670,30 @@ ul {
     margin-top: 14px;
     max-width: 560px;
     line-height: 1.75;
+}
+.btn-ghost-explore {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--n50);
+    font-family: var(--font-b);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px 24px;
+    border-radius: var(--r-full);
+    border: 1.5px solid var(--g300);
+    cursor: pointer;
+    transition:
+        background var(--tr),
+        border-color var(--tr),
+        transform var(--tr);
+}
+.btn-ghost-explore:hover {
+    background: var(--g50);
+    border-color: var(--g500);
+    color: var(--n900);
+
 }
 
 /* ══════════════════════════════════════════════════════════
@@ -547,8 +781,8 @@ ul {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: var(--g800);
-    color: var(--white);
+    background: var(--g50);
+    color: var(--g950);
     font-family: var(--font-b);
     font-size: 15px;
     font-weight: 600;
@@ -557,19 +791,22 @@ ul {
     border: none;
     cursor: pointer;
     transition:
-        background var(--tr),
-        transform var(--tr),
-        box-shadow var(--tr);
+    background var(--tr),
+    transform var(--tr),
+    box-shadow var(--tr);
 }
 .btn-primary:hover {
-    background: var(--g700);
+    background: #081828;
+    border:1px solid #7697c7;
+    color: var(--white);
+
 }
 .btn-ghost {
     display: inline-flex;
     align-items: center;
     gap: 8px;
     background: transparent;
-    color: var(--g800);
+    color: var(--n900);
     font-family: var(--font-b);
     font-size: 15px;
     font-weight: 500;
@@ -808,7 +1045,9 @@ ul {
     position: relative;
     overflow: hidden;
     padding: 80px 0 60px;
-    background: var(--n50);
+    background-image: url('/images/banner1.png');
+    background-size: cover;
+    background-position: center;
 }
 .hero-bg-c1 {
     position: absolute;
@@ -897,16 +1136,16 @@ ul {
     font-size: clamp(38px, 5vw, 58px);
     font-weight: 400;
     line-height: 1.1;
-    color: var(--n900);
+    color: var(--white);
     letter-spacing: -0.02em;
 }
 .hero-heading em {
     font-style: italic;
-    color: var(--g700);
+    color: #2b5fca;
 }
 .hero-subtext {
     font-size: 16.5px;
-    color: var(--n500);
+    color: var(--n300);
     line-height: 1.75;
     max-width: 480px;
 }
@@ -928,7 +1167,7 @@ ul {
     gap: 5px;
     font-size: 12.5px;
     font-weight: 500;
-    color: var(--n500);
+    color: var(--n300);
 }
 .trust-icon {
     color: var(--g600);
