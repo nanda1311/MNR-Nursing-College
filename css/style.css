@@ -1068,7 +1068,6 @@ ul {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    filter: brightness(0) invert(1);
 }
 .icon-sm {
   font-size: 1.25rem;
