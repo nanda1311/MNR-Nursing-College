@@ -435,7 +435,6 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 .page-hero-about h1 {
     font-family: var(--font-d);
@@ -469,7 +468,7 @@ ul {
     position: absolute;
     inset: 0;
     background-color: #0d1b38;
-    background-image: url(/images/faculty-banner.jpeg);
+    background-image: url(../images/faculty-banner.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -507,7 +506,7 @@ ul {
     position: absolute;
     inset: 0;
     background-color: #0d1b38;
-    background-image: url(/images/academics-banner.png);
+    background-image: url(../images/academics-banner.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -545,7 +544,7 @@ ul {
     position: absolute;
     inset: 0;
     background-color: #0d1b38;
-    background-image: url(/images/admissions-banner1.png.jpeg);
+    background-image: url(../images/admissions-banner1.png.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -583,7 +582,7 @@ ul {
     position: absolute;
     inset: 0;
     background-color: #0d1b38;
-    background-image: url(/images/contact-banner1.png);
+    background-image: url(../images/contact-banner1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
