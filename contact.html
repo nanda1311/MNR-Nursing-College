@@ -374,6 +374,19 @@
     // Initial check
     toggleScrollButton();
   })();
+    /* ── Contact form submit ── */
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const btn = contactForm.querySelector('button[type="submit"]');
+      btn.textContent = 'Message sent!';
+      btn.style.background = 'var(--g600)';
+      setTimeout(() => { contactForm.reset(); btn.textContent = 'Send message'; btn.style.background = ''; }, 3000);
+    });
+  }
+
 </script>
+
 </body>
 </html>
