@@ -457,6 +457,44 @@ ul {
     line-height: 1.75;
 }
 /* ══════════════════════════════════════════════════════════
+   PAGE HERO BANNER (about page)
+══════════════════════════════════════════════════════════ */
+.page-hero-faculty {
+    padding: 64px 0 56px;
+    position: relative;
+    overflow: hidden;
+}
+.page-hero-faculty::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #0d1b38;
+    background-image: url(/images/faculty-banner.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.page-hero-faculty h1 {
+    font-family: var(--font-d);
+    font-size: clamp(32px, 5vw, 52px);
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+.page-hero-faculty h1 em {
+    font-style: italic;
+    color: var(--g400);
+}
+.page-hero-faculty p {
+    font-size: 16px;
+    color: var(--g200);
+    margin-top: 14px;
+    max-width: 560px;
+    line-height: 1.75;
+}
+/* ══════════════════════════════════════════════════════════
    PAGE HERO BANNER (academics page)
 ══════════════════════════════════════════════════════════ */
 .page-hero-academics {
