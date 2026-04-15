@@ -163,7 +163,7 @@
     <div>
       <div class="ci-label">Phone</div>
       <div class="ci-value">
-        <a href="tel:+919876543210">+91 98765 43210</a>
+        <a href="tel:+919945000037">+91 99450 00037</a>
       </div>
       <div class="ci-sub">Mon – Sat · 9:00 AM – 5:00 PM</div>
     </div>
@@ -209,29 +209,52 @@
 
       <!-- Enquiry form -->
       <div data-aos="fade-left" style="--d:.2s">
-        <form class="enquiry-form" id="contactForm">
-          <h2>Send us a <em style="font-style:italic;color:var(--g700)">message</em></h2>
-          <p>Fill the form and we'll get back to you shortly.</p>
-          <div class="form-grid">
-            <div class="form-group"><label>Your name *</label><input type="text" placeholder="Full name" required/></div>
-            <div class="form-group"><label>Mobile number *</label><input type="tel" placeholder="+91 XXXXX XXXXX" required/></div>
-            <div class="form-group full"><label>Email address</label><input type="email" placeholder="your@email.com"/></div>
-            <div class="form-group full"><label>I'm enquiring about *</label>
-              <select required>
-                <option value="">Select topic</option>
-                <option>GNM Nursing admissions</option>
-                <option>B.Sc Nursing admissions</option>
-                <option>M.Sc Nursing admissions</option>
-                <option>Fee structure &amp; scholarships</option>
-                <option>Hostel &amp; accommodation</option>
-                <option>Campus visit / tour</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="form-group full"><label>Your message *</label><textarea placeholder="Write your question or message here..." required></textarea></div>
-          </div>
-          <button type="submit" class="btn-primary" style="margin-top:8px;width:100%;justify-content:center">Send message <i data-lucide="send" class="icon-sm"></i></button>
-        </form>
+<form class="enquiry-form" id="" action="https://formspree.io/f/mbdqlnrl" method="POST">
+  <h2>Send us a <em style="font-style:italic;color:var(--g700)">message</em></h2>
+  <p>Fill the form and we'll get back to you shortly.</p>
+
+  <div class="form-grid">
+    
+    <div class="form-group">
+      <label>Your name *</label>
+      <input type="text" name="name" placeholder="Full name" required/>
+    </div>
+
+    <div class="form-group">
+      <label>Mobile number *</label>
+      <input type="tel" name="mobile" placeholder="+91 XXXXX XXXXX" required/>
+    </div>
+
+    <div class="form-group full">
+      <label>Email address</label>
+      <input type="email" name="email" placeholder="your@email.com"/>
+    </div>
+
+    <div class="form-group full">
+      <label>I'm enquiring about *</label>
+      <select name="subject" required>
+        <option value="">Select topic</option>
+        <option>GNM Nursing admissions</option>
+        <option>B.Sc Nursing admissions</option>
+        <option>M.Sc Nursing admissions</option>
+        <option>Fee structure &amp; scholarships</option>
+        <option>Hostel &amp; accommodation</option>
+        <option>Campus visit / tour</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="form-group full">
+      <label>Your message *</label>
+      <textarea name="message" placeholder="Write your question or message here..." required></textarea>
+    </div>
+
+  </div>
+
+  <button type="submit" class="btn-primary" style="margin-top:8px;width:100%;justify-content:center">
+    Send message <i data-lucide="send" class="icon-sm"></i>
+  </button>
+</form>
       </div>
     </div>
   </div>
@@ -318,7 +341,7 @@
         <!-- Phone -->
         <div class="footer-contact-item">
           <i data-lucide="phone" class="icon-sm"></i>
-          <a href="tel:+919876543210">+91 98765 43210</a>
+          <a href="tel:+919945000037">+91 99450 00037</a>
         </div>
         <!-- Email -->
         <div class="footer-contact-item">
@@ -337,7 +360,7 @@
 </footer>
 <script src="js/main.js"></script>
 <div class="floating-buttons">
-  <a href="https://wa.me/919876543210?text=Hello%20I%20want%20to%20know%20about%20nursing%20admissions" 
+  <a href="https://wa.me/919945000037?text=Hello%20I%20want%20to%20know%20about%20nursing%20admissions" 
      class="whatsapp-btn float-btn" 
      target="_blank">
     <i class="fab fa-whatsapp"></i>
