@@ -9,11 +9,11 @@ A fully responsive, multi-page static website for **MNR Institute of Nursing Sci
 | Page | File | Description |
 |---|---|---|
 | Home | `index.html` | Hero, stats, programs, why MNR, testimonials, affiliations |
-| About | `pages/about.html` | Story, vision & mission, values, faculty, accreditations |
-| Academics | `pages/academics.html` | GNM, B.Sc & M.Sc program details, eligibility, subjects |
-| Admissions | `pages/admissions.html` | Eligibility, process, fee structure, online application form |
-| Campus Life | `pages/campus.html` | Facilities, hostel, activities, photo gallery |
-| Contact | `pages/contact.html` | Enquiry form, location, map, FAQ |
+| About | `about.html` | Story, vision & mission, values, faculty, accreditations |
+| Academics | `academics.html` | GNM, B.Sc & M.Sc program details, eligibility, subjects |
+| Admissions | `admissions.html` | Eligibility, process, fee structure, online application form |
+| Campus Life | `campus.html` | Facilities, hostel, activities, photo gallery |
+| Contact | `contact.html` | Enquiry form, location, map, FAQ |
 
 ---
 
@@ -32,7 +32,7 @@ MNR-NURSING-COLLEGE/
 │   ├── aboutus.png        # About page college photo
 │   ├── doctor-default.jpeg# Default faculty photo
 │   └── Nursing-skills-lab.png  # Facility cards image
-└── pages/
+└── 
     ├── about.html
     ├── academics.html
     ├── admissions.html

@@ -53,7 +53,14 @@
 html {
     scroll-behavior: smooth;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
+    max-width: 100%;
+    overflow-x: hidden;
+
     font-family: var(--font-b);
     color: var(--n900);
     background: var(--white);
@@ -2404,10 +2411,14 @@ ul {
         text-align: center;
     }
     .hero-content {
-        align-items: center;
+        align-items: flex-start;
     }
     .hero-subtext {
         max-width: 560px;
+        text-align: left;
+    }
+    .hero-badge{
+        text-align: left;
     }
     .trust-badges {
         justify-content: center;
@@ -2512,5 +2523,6 @@ ul {
     }
     .hero-heading {
         font-size: 30px;
+        text-align: left;
     }
 }
