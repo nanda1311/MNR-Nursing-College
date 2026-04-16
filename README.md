@@ -14,6 +14,7 @@ A fully responsive, multi-page static website for **MNR Institute of Nursing Sci
 | Admissions | `admissions.html` | Eligibility, process, fee structure, online application form |
 | Campus Life | `campus.html` | Facilities, hostel, activities, photo gallery |
 | Contact | `contact.html` | Enquiry form, location, map, FAQ |
+| Faculty | `faculty.html` | Faculty images, faculty name,  |
 
 ---
 
